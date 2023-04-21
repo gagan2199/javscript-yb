@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>functions with parameters</title>
+    <title>functions with return value</title>
 </head>
 <body>
     <script>
@@ -14,11 +14,13 @@
         }
         function sum(a,b)
         {
-            document.write(a+b);
+            var c=a+b;
+            return c;
         }
-        name("gagan","kumar");
-        name("ram")
-        sum(7,9);
+       // name("gagan","kumar");
+        //name("ram")
+        var s=sum(7,9);
+        document.write(s);
     </script>
 </body>
 </html>
