@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi-dimentional array</title>
+</head>
+<body>
+    <script>
+        var a=[
+            ["name","roll no.","marks"],
+            ["ram",1,81],
+            ["sham",2,83],
+            ["sita",3,85]
+        ];
+        document.write("<table border=1px>")
+        for(var i=0;i<(a.length);i++)
+        {
+            document.write("<tr>");
+            for(var j=0;j<(a[i].length);j++)
+            {
+            document.write("<td>"+  a[i][j]+"  "  +"</td>");
+            }
+           
+            document.write("</tr>")
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>
