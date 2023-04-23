@@ -9,14 +9,14 @@
 <body>
     <script>
         var a=[12,16,23,26];
-        var b=a.find(checkage); //to find only one greater value
-        var c=a.findIndex(checkage); //index
+        var b=a.filter(checkage); //to find only one greater value
+     
         function checkage(age)
         {
             return age>=18;
         }
         document.write(b);
-        document.write(c);
+   
     </script>
 </body>
 </html>
