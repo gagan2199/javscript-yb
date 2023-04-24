@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>const with array and objects</title>
+</head>
+<body>
+    <script>
+        const a=[1,2,3,4];
+        a[2]=3; //it will change the value
+        //a=[4,3,2,1]; //it will not bcz a is const
+        document.write(a);
+
+        const b= {
+            name:"ram",
+            roll:2
+        };
+        b.name="sham";
+        // b={
+        //     name:"raam",   //will show error
+        //     roll:1
+        // }
+        document.write(b.name+" "+b.roll)
+
+    </script>
+</body>
+</html>
