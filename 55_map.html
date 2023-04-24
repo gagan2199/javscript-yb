@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+
+<body>
+    <script>
+        var a = [1, 2, 3, 4, 5];
+        var b = a.map(tentimes)
+        function tentimes(value) {
+            return value * 10;
+        }
+        document.write(a + "<br>");
+        document.write(b + "<br>");
+        var c = [{ fname: "ram", age: 18 },
+                 { fname: "sham", age: 19 }
+                ];
+
+        var d=c.map(test);
+        document.write(d+ "<br>");
+        function test (n){
+            return n.fname;
+        }
+        
+    </script>
+</body>
+
+</html>
