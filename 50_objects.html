@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+    <script>
+        var a=[1,2,3,4];
+        var c={
+            fname:"gagan",
+            lname:"kumar",
+            roll :28,
+            favsingers:["ss","gm","mw"],
+            fullname: function()
+            {
+                return this.fname+" "+this.lname+" ";
+            },
+            salary: function()
+            {
+                return 50000;
+            },
+            hobbies:{
+                fgame:"cricket",
+                sgame:"football",
+                tgame:"kabbadi"
+             }
+        }
+        document.write(c.fullname());
+        document.write(c.hobbies.fgame);
+    </script>
+</body>
+</html>
