@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom css styling methods</title>
+    <style>
+        .cls
+        {
+            font: bold;
+            color: blue;
+            background-color: aquamarine;
+        }
+        #ide{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            background-color: black;
+        }
+        .nw
+        {
+            color: black;
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" id="head">
+        this is head of our html part.
+    </div>
+
+    <script>
+        // document.querySelector('.header').style.color="red";
+        // document.querySelector('.header').className='cls';
+        document.querySelector('.header').classList.add("nw");
+        document.querySelector('.header').classList.remove("nw");
+        let header=document.querySelector('.header');
+        console.log(header);
+    </script>
+</body>
+</html>
