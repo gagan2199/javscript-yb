@@ -1,7 +1,7 @@
 document.getElementById('1st').addEventListener("mouseleave",abc);
 document.getElementById('1st').removeEventListener("click",xyz);
 document.getElementById('2nd').addEventListener("click",function(){
-   this.style.backgroundColor="red";
+   this.style.backgroundColor="blue";
 });
 function abc(){
     document.getElementById('1st').style.backgroundColor="black";
